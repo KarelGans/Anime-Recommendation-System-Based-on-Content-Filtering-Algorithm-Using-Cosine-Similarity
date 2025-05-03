@@ -8,9 +8,9 @@ Dalam era digital yang terus berkembang, kebutuhan akan sistem rekomendasi semak
 
 Dengan semakin banyaknya pilihan anime yang tersedia, layanan streaming sering kali mengalami kesulitan dalam memilih tontonan yang sesuai dengan preferensi user. Oleh karena itu, diperlukan suatu sistem rekomendasi yang mampu membantu pengguna menemukan anime yang relevan berdasarkan kesamaan konten atau preferensi pengguna sebelumnya.
 
-Proyek ini bertujuan untuk membangun sistem rekomendasi anime menggunakan pendekatan *Content-Based Filtering* dengan memanfaatkan data dari Kaggle: [Anime Recommendation Database](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database). Pendekatan ini bekerja dengan menganalisis fitur dari anime itu sendiri (seperti genre) dan mencocokkannya dengan preferensi pengguna untuk memberikan rekomendasi yang relevan.
+Proyek ini bertujuan untuk membangun sistem rekomendasi anime menggunakan pendekatan *Content-Based Filtering* dengan memanfaatkan data dari Kaggle: [Anime Recommendation Database](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database).[2] Pendekatan ini bekerja dengan menganalisis fitur dari anime itu sendiri (seperti genre) dan mencocokkannya dengan preferensi pengguna untuk memberikan rekomendasi yang relevan.
 
-Menurut [Ricci et al., 2011], sistem rekomendasi berbasis konten sangat efektif digunakan ketika data historis interaksi pengguna terbatas atau preferensi pengguna baru belum banyak diketahui (*cold start*). Dengan pendekatan ini, sistem tetap dapat memberikan saran berdasarkan kemiripan fitur antar item.
+Menurut Ricci, sistem rekomendasi berbasis konten sangat efektif digunakan ketika data historis interaksi pengguna terbatas atau preferensi pengguna baru belum banyak diketahui (*cold start*). Dengan pendekatan ini, sistem tetap dapat memberikan saran berdasarkan kemiripan fitur antar item.[3]
 
 ## Business Understanding
 
@@ -35,7 +35,9 @@ Pendekatan ini akan menggunakan vektorisasi genre anime dalam bentuk *TF-IDF* at
 
 **Referensi**:  
 [1] Statista, "Number of Crunchyroll paying subscribers worldwide from September 2012 to June 2024," Statista, 2023. [Online]. Available: https://www.statista.com/statistics/594952/crunchyroll-users/. [Accessed: May 3, 2025].
+
 [2] Cooper Union, "Anime Recommendations Database," Kaggle. [Online]. Available: https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database. [Accessed: May 3, 2025].
+
 [3] F. Ricci, L. Rokach, and B. Shapira, Introduction to Recommender Systems Handbook. Springer, 2011.
 
 
