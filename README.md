@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Carolus Christadi Cahyono
+# Laporan Proyek Machine Learning Terapan - Carolus Christadi Cahyono
 
 ## Project Overview
 
