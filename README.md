@@ -2,7 +2,11 @@
 
 ## Project Overview
 
-Dalam era digital yang terus berkembang, kebutuhan akan sistem rekomendasi semakin penting, terutama dalam bidang hiburan seperti anime. Dengan semakin banyaknya pilihan anime yang tersedia, pengguna sering kali mengalami kesulitan dalam memilih tontonan yang sesuai dengan preferensi mereka. Oleh karena itu, diperlukan suatu sistem rekomendasi yang mampu membantu pengguna menemukan anime yang relevan berdasarkan kesamaan konten atau preferensi pengguna sebelumnya.
+Dalam era digital yang terus berkembang, kebutuhan akan sistem rekomendasi semakin penting, terutama dalam bidang hiburan seperti anime. Menurut data dari Crunchyroll menunjukkan pertumbuhan jumlah pelanggan berbayar secara signifikan dari tahun 2012 hingga 2024, dengan jumlah mencapai lebih dari 10 juta pelanggan pada Juni 2024 [1] Selain itu, banyak layanan populer seperti Netflix, Prime, Video, dll yang mengadopsi anime sebagai salah satu media hiburan dalam layanan streaming mereka.
+
+![Grafik pengguna layanan crunchyroll](stat.png)
+
+Dengan semakin banyaknya pilihan anime yang tersedia, layanan streaming sering kali mengalami kesulitan dalam memilih tontonan yang sesuai dengan preferensi user. Oleh karena itu, diperlukan suatu sistem rekomendasi yang mampu membantu pengguna menemukan anime yang relevan berdasarkan kesamaan konten atau preferensi pengguna sebelumnya.
 
 Proyek ini bertujuan untuk membangun sistem rekomendasi anime menggunakan pendekatan *Content-Based Filtering* dengan memanfaatkan data dari Kaggle: [Anime Recommendation Database](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database). Pendekatan ini bekerja dengan menganalisis fitur dari anime itu sendiri (seperti genre) dan mencocokkannya dengan preferensi pengguna untuk memberikan rekomendasi yang relevan.
 
@@ -24,14 +28,16 @@ Menurut [Ricci et al., 2011], sistem rekomendasi berbasis konten sangat efektif 
 
 Untuk mencapai tujuan tersebut, pendekatan yang akan digunakan adalah sebagai berikut:
 
-1. **Content-Based Filtering menggunakan Cosine Similarity**  
-   Pendekatan ini akan menggunakan vektorisasi genre anime dalam bentuk *TF-IDF* atau *One-Hot Encoding*, kemudian menghitung kesamaan antar anime menggunakan *cosine similarity*. Anime yang paling mirip dengan anime yang disukai pengguna akan direkomendasikan.
+**Content-Based Filtering menggunakan Cosine Similarity**  
+Pendekatan ini akan menggunakan vektorisasi genre anime dalam bentuk *TF-IDF* atau *One-Hot Encoding*, kemudian menghitung kesamaan antar anime menggunakan *cosine similarity*. Anime yang paling mirip dengan anime yang disukai pengguna akan direkomendasikan.
 
 ---
 
 **Referensi**:  
-[1] Ricci, F., Rokach, L., & Shapira, B. (2011). *Introduction to Recommender Systems Handbook*. Springer.  
-[2] Cooper Union. (n.d.). Anime Recommendations Database. Kaggle. Retrieved from https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database
+[1] Statista, "Number of Crunchyroll paying subscribers worldwide from September 2012 to June 2024," Statista, 2023. [Online]. Available: https://www.statista.com/statistics/594952/crunchyroll-users/. [Accessed: May 3, 2025].
+[2] Cooper Union, "Anime Recommendations Database," Kaggle. [Online]. Available: https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database. [Accessed: May 3, 2025].
+[3] F. Ricci, L. Rokach, and B. Shapira, Introduction to Recommender Systems Handbook. Springer, 2011.
+
 
 ## Data Understanding
 
@@ -136,6 +142,8 @@ Data menggabungkan keseluruhan genre menjadi suatu string pada kolom sehingga su
 - Menghitung setiap genre
 - Menampilkan dalam bentuk bar chart
 
+![Grafik persebarkan genre](genre_distribution.png)
+
 #### Top 10 anime dengan rating tertinggi
 
 Dataset yang diberikat pada rating.csv perlu di proses kembali agar bisa melihat total rating untuk satu anime sehingga dibuatlah langkah-langkah untuk dapat melakukan visualisasi
@@ -144,6 +152,8 @@ Dataset yang diberikat pada rating.csv perlu di proses kembali agar bisa melihat
 - Melakukan grouping untuk setiap anime dengan anime_id yang sama dan melihat jumlah rating
 - Mencari anime dengan 10 rating tertinggi
 - Menampilkan dalam bentuk bar chart
+
+![Grafik top 10 anime](top10_anime.png)
 
 ---
 
